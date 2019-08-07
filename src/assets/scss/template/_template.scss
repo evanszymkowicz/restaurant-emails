@@ -1,0 +1,127 @@
+body,
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+//header component
+
+.header {
+	& .container {
+		background-color: $white;
+	}
+
+	& img {
+		margin: 20px auto;
+		width: 50px;
+		height: 50px;
+	}
+	@media only screen and (max-width: #{$global-breakpoint}) {
+		& img {
+			display: block !important;
+			margin: 20px auto !important !important;
+			width: 50px !important;
+			height: 50px !important;
+		}
+	}
+}
+
+// wrapper class headline
+.headline {
+  & h1 {
+    margin: 0 40px 10px;
+    text-align: center;
+    font-family: $body-font-family;
+    font-size: 60px;
+    line-height: 1;
+    color: $primary-color;
+    letter-spacing: -2px;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      font-size: 48px!important;
+      margin: 0!important;
+      margin-bottom: 10px!important;
+      hyphens: auto!important;
+    }
+  }
+
+  & .columns {
+    padding-bottom: 0;
+  }
+}
+
+//wrapper class buttons
+.buttons {
+  & .collapse {
+    margin-bottom: 0;
+  }
+  & .columns {
+    padding-bottom: 0;
+  }
+}
+
+//wrapper class paragraphs
+
+.events {
+  & .container {
+    background-color: $primary-color;
+  }
+  h3 {
+    color: $third-color;
+    // text-transform: bolder;
+  }
+  .small {
+    color: $black;
+  }
+
+  h4 {
+    color: $black;
+    text-transform: bolder;
+  }
+}
+
+.footer-address {
+  & .container {
+		background-color: $white;
+	}
+	img {
+		margin: 20px auto;
+		width: 100px;
+		height: 100px;
+	}
+  p {
+    font-size: 10px;
+  }
+}
+
+.footer {
+  & .container {
+    background-color: $white;
+  }
+  & .menu-item {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    a {
+      color: $medium-gray!important;
+    }
+  }
+}
+
+.line-items {
+  .callout-inner {
+    margin: 0 100px;
+    text-align: left;
+    border: 0!important;
+    @media only screen and (max-width: #{$global-breakpoint}) {
+      margin: 0 30px!important;
+    }
+  }
+  h4 {
+    text-align: left;
+    &.gray {
+      color: #999;
+    }
+  }
+  .row .columns {
+    padding-bottom: 0;
+  }
+}

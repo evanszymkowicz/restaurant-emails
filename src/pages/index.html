@@ -1,13 +1,73 @@
 ---
-layout: index-layout
-subject: My Email Templates
+# Basics
+subject: What's New this August
+description: In the neighborhood? Come see us!
+
+button_1_copy: Redeem Now
+button_1_link:
 ---
 
-<spacer size="16"></spacer>
-
 {{> header}}
-{{> hero-image}}
-{{> main}}
-{{> footer}}
 
-<spacer size="16"></spacer>
+<wrapper class="hero-image">
+  <container>
+    <img src="{{ root }}/assets/img/glens-specials.png" alt="Come see our August specials">
+    <spacer size="20"></spacer>
+  </container>
+</wrapper>
+
+<wrapper class="buttons">
+  <container>
+    <row class="collapse">
+      <center>
+        <h4 class="text-center">Beat the heat with a special offer from us!</h4>
+      </center>
+    </row>
+    <row>
+      <columns>
+        <center>
+          <p class="text-center">Print the email code “EMAIL5” for $5 off next time you check out.</p>
+        </center>
+      </columns>
+    </row>
+    <spacer size="10"></spacer>
+    <row class="collapse">
+      <columns large="2" small="1"></columns>
+      <columns><button class="primary expand cta big" href="{{ button_1_link }}">{{ button_1_copy }}</button></columns>
+      <columns large="2" small="1"></columns>
+    </row>
+    <row class="collapse">
+      <columns>
+        <spacer size="5"></spacer>
+        <center>
+          <small>Must have a minimum of $25 <br>*Expires August 29 </small>
+        </center>
+      </columns>
+    </row>
+    <spacer size="20"></spacer>
+  </container>
+</wrapper>
+
+<wrapper class="events">
+  <container>
+    <spacer size="5"></spacer>
+    <row class="upcoming">
+      <h3 class="text-center">Upcoming Events:</h3>
+    </row>
+    <row class="thursday-night">
+      <columns>
+        <img src="{{ root }}/assets/img/thursdays.png" alt="Thursday Night Cookout" />
+      </columns>
+    </row>
+    <row class="rsvp">
+      <columns>
+        <p class="text-center">
+          Cookout season is here and we’re celebrating every Thursday night, weather permitting, on our patio! Mark your calendars and plan to come by after work for sliders (veggie or meat), hot dogs and craft beer!
+        </p>
+      </columns>
+      <h4 href="https://www.glensgardenmarket.com/" class="text-center">Click HERE to RSVP!</h3>
+    </row>
+  </container>
+</wrapper>
+
+{{> footer}}
